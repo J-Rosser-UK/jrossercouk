@@ -13,7 +13,10 @@ module.exports = {
       { hostname: "res.cloudinary.com" },
       { hostname: "www.google.com" },
       { hostname: "images.unsplash.com" },
-      { hostname: "upload.wikimedia.org"}
+      { hostname: "upload.wikimedia.org"},
+      { hostname: "media.licdn.com"},
+      { hostname: "seeklogo.com"},
+
     ],
   },
 };

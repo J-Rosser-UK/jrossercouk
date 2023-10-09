@@ -14,7 +14,7 @@ type Props = {
 };
 
 const fallbackImage: string =
-  "https://res.cloudinary.com/victoreke/image/upload/v1692636087/victoreke/projects.png";
+  "https://res.cloudinary.com/jrosser/image/upload/v1692636087/jrosser/projects.png";
 
 // Dynamic metadata for SEO
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -23,13 +23,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `${project.name} | Project`,
-    metadataBase: new URL(`https://victoreke.com/projects/${project.slug}`),
+    metadataBase: new URL(`https://jrosser.co.uk/projects/${project.slug}`),
     description: project.tagline,
     openGraph: {
       images:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/800px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg" ||
+        "/../public/profile_picture.jpg" ||
         fallbackImage,
-      url: `https://victoreke.com/projects/${project.slug}`,
+      url: `https://jrosser.co.uk/projects/${project.slug}`,
       title: project.name,
       description: project.tagline,
     },

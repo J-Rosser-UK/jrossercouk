@@ -10,17 +10,17 @@ import Usage from "../components/pages/Usage";
 import { Slide } from "../animation/Slide";
 
 export const metadata: Metadata = {
-  title: "About | Victor Eke",
-  metadataBase: new URL("https://victoreke.com/about"),
+  title: "About | J Rosser",
+  metadataBase: new URL("https://jrosser.co.uk/about"),
   description:
     "Learn more about my skills, experience and technical background",
   openGraph: {
-    title: "About | Victor Eke",
-    url: "https://victoreke.com/about",
+    title: "About | J Rosser",
+    url: "https://jrosser.co.uk/about",
     description:
       "Learn more about my skills, experience and technical background",
     images:
-      "https://res.cloudinary.com/victoreke/image/upload/v1692635746/victoreke/og.png",
+      "https://res.cloudinary.com/jrosser/image/upload/v1692635746/jrosser/og.png",
   },
 };
 

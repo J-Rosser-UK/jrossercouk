@@ -5,10 +5,10 @@ export const getProfile = async (): Promise<ProfileType[]> => {
   return [{
     _id: "1",
     fullName: "J Rosser",
-    headline: "Web Developer",
+    headline: "AI Researcher // Software Engineer",
     profileImage: {
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/800px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg", // replace with your image path
-      lqip: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/800px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg", // replace with your lqip path
+      image: "/../public/profile_picture.jpg", // replace with your image path
+      lqip: "/../public/profile_picture.jpg", // replace with your lqip path
       alt: "Description of Image",
     },
     shortBio: "I'm a passionate web developer with over 5 years of experience.",
@@ -16,7 +16,7 @@ export const getProfile = async (): Promise<ProfileType[]> => {
     fullBio: [], // fill this based on your requirements
     location: "City, Country",
     resumeURL: "path_to_resume.pdf",
-    og: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/800px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg",
+    og: "/../public/profile_picture.jpg",
     usage: [], // fill this based on your requirements
   }];
 }
@@ -31,15 +31,15 @@ export const getPost = async (): Promise<PostType> => {
         slug: "sample-post-1",
         description: "This is a description for Sample Post 1.",
         coverImage: {
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/800px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg",
-        lqip: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/800px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg",
+        image: "/../public/profile_picture.jpg",
+        lqip: "/../public/profile_picture.jpg",
         alt: "Image description",
         },
         tags: ["tag1", "tag2"],
         author: {
         name: "Author Name",
         photo: {
-            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/800px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg",
+            image: "/../public/profile_picture.jpg",
             alt: "Author Image description",
         },
         twitterUrl: "https://twitter.com/author",
@@ -60,15 +60,15 @@ export const getPosts = async (): Promise<PostType[]> => {
         slug: "sample-post-1",
         description: "This is a description for Sample Post 1.",
         coverImage: {
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/800px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg",
-        lqip: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/800px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg",
+        image: "/../public/profile_picture.jpg",
+        lqip: "/../public/profile_picture.jpg",
         alt: "Image description",
         },
         tags: ["tag1", "tag2"],
         author: {
         name: "Author Name",
         photo: {
-            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/800px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg",
+            image: "/../public/profile_picture.jpg",
             alt: "Author Image description",
         },
         twitterUrl: "https://twitter.com/author",
@@ -84,15 +84,15 @@ export const getPosts = async (): Promise<PostType[]> => {
         slug: "sample-post-2",
         description: "This is a description for Sample Post 2.",
         coverImage: {
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/800px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg",
-        lqip: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/800px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg",
+        image: "/../public/profile_picture.jpg",
+        lqip: "/../public/profile_picture.jpg",
         alt: "Image description",
         },
         tags: ["tag2", "tag2"],
         author: {
         name: "Author Name",
         photo: {
-            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/800px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg",
+            image: "/../public/profile_picture.jpg",
             alt: "Author Image description",
         },
         twitterUrl: "https://twitter.com/author",
@@ -115,16 +115,28 @@ export const getHeroes = async (): Promise<HeroeType[]> => {
 }
 
 export const getJobs = async (): Promise<JobType[]> => {
-    return [{
+    return [
+        {
         _id: "job1",
-        name: "Company A",
-        jobTitle: "Web Developer",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/800px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg",
+        name: "Artera",
+        jobTitle: "Lead Software Engineer",
+        logo: "https://media.licdn.com/dms/image/D560BAQET9s3D_-wpHA/company-logo_200_200/0/1695047009925/artera_global_logo?e=1704931200&v=beta&t=cGn_6IWY_zntWMGxIdsSCsvZSU87S07H7p57fy92q34",
         url: "https://companyA.com",
-        description: "Web developer at Company A. Worked on various web applications.",
-        startDate: "2020-01-01",
-        endDate: "2022-01-01"
-      }]
+        description: "Lead Software Engineer at Artera.",
+        startDate: "2022-09-26",
+        endDate: null
+      },
+      {
+        _id: "job1",
+        name: "University of Oxford",
+        jobTitle: "Master of Engineering",
+        logo: "https://seeklogo.com/images/U/University_of_Oxford-logo-2ACBB1AA61-seeklogo.com.png",
+        url: "https://companyA.com",
+        description: "First Class, 82 on Master's Project, Academic Scholarship awarded.",
+        startDate: "2018-09-01",
+        endDate: "2022-09-01",
+      }
+    ]
 }
 
 
@@ -136,11 +148,11 @@ export const getSingleProject = async (slug: string): Promise<ProjectType> => {
             slug: "sample-project-slug",
             tagline: "A groundbreaking project.",
             projectUrl: "https://sampleproject.com",
-            logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/800px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg",
+            logo: "/../public/profile_picture.jpg",
             coverImage: {
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/800px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg",
+                image: "/../public/profile_picture.jpg",
                 alt: "Sample project cover image",
-                lqip: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/800px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg"
+                lqip: "/../public/profile_picture.jpg"
             },
             description: []
         }
@@ -159,11 +171,11 @@ export const getProjects = async (): Promise<ProjectType[]> => {
             slug: "sample-project-slug",
             tagline: "A groundbreaking project.",
             projectUrl: "https://sampleproject.com",
-            logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/800px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg",
+            logo: "/../public/profile_picture.jpg",
             coverImage: {
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/800px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg",
+                image: "/../public/profile_picture.jpg",
                 alt: "Sample project cover image",
-                lqip: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/800px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg"
+                lqip: "/../public/profile_picture.jpg"
             },
             description: []
         }]

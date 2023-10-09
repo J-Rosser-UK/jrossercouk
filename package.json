@@ -1,5 +1,5 @@
 {
-  "name": "victoreke.com",
+  "name": "jrosser.co.uk",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -35,5 +35,17 @@
     "next-sanity-image": "^6.1.0",
     "next-themes": "^0.2.1",
     "react-refractor": "^2.1.7"
-  }
+  },
+  "description": "<div align=\"center\">\r <a href=\"https://jrosser.co.uk\"><img src=\"./public/logo.png\" width=\"60px\"></a>\r </div>",
+  "main": "next.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/J-Rosser-UK/jrossercouk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/J-Rosser-UK/jrossercouk/issues"
+  },
+  "homepage": "https://github.com/J-Rosser-UK/jrossercouk#readme"
 }

@@ -14,12 +14,12 @@ const inter = Inter({
 });
 
 const options = {
-  title: "Victor Eke | Software Developer",
+  title: "J Rosser | Software Developer",
   description:
-    "Victor Eke is a Software Developer and Technical Writer who is passionate about building solutions and contributing to open source communities",
-  url: "https://victoreke.com",
+    "J Rosser is a Software Developer and Technical Writer who is passionate about building solutions and contributing to open source communities",
+  url: "https://jrosser.co.uk",
   ogImage:
-    "https://res.cloudinary.com/victoreke/image/upload/v1692635746/victoreke/og.png",
+    "/../public/profile_picture.jpg",
 };
 
 export const metadata: Metadata = {
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: options.title,
     url: options.url,
-    siteName: "victoreke.com",
+    siteName: "jrosser.co.uk",
     locale: "en-US",
     type: "website",
     description: options.description,
@@ -59,7 +59,7 @@ export default function RootLayout({
       </body>
       <Script
         async
-        src="https://statsvictor.vercel.app/script.js"
+        src="https://statsj.vercel.app/script.js"
         data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID || ""}
       />
     </html>

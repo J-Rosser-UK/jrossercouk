@@ -33,7 +33,7 @@ export type JobType = {
   url: string;
   description: string;
   startDate: string;
-  endDate: string;
+  endDate: string | null;
 };
 
 export type ProjectType = {

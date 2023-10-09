@@ -7,7 +7,7 @@ import { BiCalendar, BiTime } from "react-icons/bi";
 import { formatDate } from "../../utils/date";
 
 const fallbackImage: string =
-  "https://res.cloudinary.com/victoreke/image/upload/v1692608339/victoreke/blog.png";
+  "https://res.cloudinary.com/jrosser/image/upload/v1692608339/jrosser/blog.png";
 
 export default async function Posts() {
   const posts: PostType[] = await getPosts();

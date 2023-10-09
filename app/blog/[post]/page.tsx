@@ -20,7 +20,7 @@ type Props = {
 };
 
 const fallbackImage: string =
-  "https://res.cloudinary.com/victoreke/image/upload/v1692636087/victoreke/blog.png";
+  "https://res.cloudinary.com/jrosser/image/upload/v1692636087/jrosser/blog.png";
 
 // Dynamic metadata for SEO
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -39,23 +39,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `${post.title}`,
-    metadataBase: new URL(`https://victoreke.com/blog/${post.slug}`),
+    metadataBase: new URL(`https://jrosser.co.uk/blog/${post.slug}`),
     description: post.description,
     publisher: post.author.name,
     keywords: post.tags,
     alternates: {
       canonical:
-        post.canonicalLink || `https://victoreke.com/blog/${post.slug}`,
+        post.canonicalLink || `https://jrosser.co.uk/blog/${post.slug}`,
     },
     openGraph: {
       images:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/800px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg" ||
+      "/../public/profile_picture.jpg" ||
         fallbackImage,
-      url: `https://victoreke.com/blog/${post.slug}`,
+      url: `https://jrosser.co.uk/blog/${post.slug}`,
       title: post.title,
       description: post.description,
       type: "article",
-      siteName: "victoreke.com",
+      siteName: "jrosser.co.uk",
       authors: post.author.name,
       tags: post.tags,
       publishedTime: post._createdAt,
@@ -65,7 +65,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: post.title,
       description: post.description,
       images:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/800px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg" ||
+        "/../public/profile_picture.jpg" ||
         fallbackImage,
       creator: `@${post.author.twitterUrl.split("twitter.com/")[1]}`,
       site: `@${post.author.twitterUrl.split("twitter.com/")[1]}`,
@@ -144,7 +144,7 @@ export default async function Post({ params }: Props) {
               <address className="flex items-center gap-x-3 mt-4 not-italic">
                 <div className="relative w-12 h-12">
                   <Image
-                    src={"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/800px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg"}
+                    src={"/../public/profile_picture.jpg"}
                     alt={post.author.photo.alt}
                     layout="fill"
                     className="dark:bg-zinc-800 bg-zinc-300 rounded-full object-cover"

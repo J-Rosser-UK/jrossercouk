@@ -1,9 +1,9 @@
 <div align="center">
-<a href="https://victoreke.com"><img src="./public/logo.png" width="60px"></a>
+<a href="https://jrosser.co.uk"><img src="./public/logo.png" width="60px"></a>
 </div>
 
 <div align="center">
-<h1>victoreke.com</h1>
+<h1>jrosser.co.uk</h1>
 <p>My personal portfolio website</p>
 </div>
 
@@ -31,9 +31,9 @@ Follow this guide to get this site runnning locally:
 ### Clone Repository
 
 ```js
-git clone https://github.com/Evavic44/victoreke.com.git
+git clone https://github.com/Evavic44/jrosser.co.uk.git
 
-cd victoreke.com
+cd jrosser.co.uk
 
 npm install
 ```
@@ -121,13 +121,13 @@ npm run build
 [planetscale]: https://planetscale.com/
 [nexttheme]: https://github.com/pacocoursey/next-themes
 [reactrefractor]: https://github.com/rexxars/react-refractor
-[site]: https://victoreke.com
-[studio]: https://victoreke.com/studio
+[site]: https://jrosser.co.uk
+[studio]: https://jrosser.co.uk/studio
 [studio-preview]: ./public/studio.png
 [site-preview]: ./public/site.png
 [env-example]: ./env.example
 [localhost]: http://localhost:3000
 [localhost-studio]: http://localhost:3000/studio
-[sanity-api]: https://github.com/Evavic44/victoreke.com/blob/d526d77b3902d6339dd3eee9e95c27b7b55f3ca9/lib/sanity.api.ts#L13-L16C3
+[sanity-api]: https://github.com/Evavic44/jrosser.co.uk/blob/d526d77b3902d6339dd3eee9e95c27b7b55f3ca9/lib/sanity.api.ts#L13-L16C3
 [sanity-manage]: https://sanity.io/manage
 [sanity-guide]: https://www.freecodecamp.org/news/how-to-build-a-portfolio-site-with-sanity-and-nextjs

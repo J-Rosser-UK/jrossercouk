@@ -7,15 +7,15 @@ import EmptyState from "../components/shared/EmptyState";
 import { Slide } from "../animation/Slide";
 
 export const metadata: Metadata = {
-  title: "Project | Victor Eke",
-  metadataBase: new URL("https://victoreke.com/projects"),
-  description: "Explore projects built by Victor Eke",
+  title: "Project | J Rosser",
+  metadataBase: new URL("https://jrosser.co.uk/projects"),
+  description: "Explore projects built by J Rosser",
   openGraph: {
-    title: "Projects | Victor Eke",
-    url: "https://victoreke.com/projects",
-    description: "Explore projects built by Victor Eke",
+    title: "Projects | J Rosser",
+    url: "https://jrosser.co.uk/projects",
+    description: "Explore projects built by J Rosser",
     images:
-      "https://res.cloudinary.com/victoreke/image/upload/v1692636087/victoreke/projects.png",
+      "https://res.cloudinary.com/jrosser/image/upload/v1692636087/jrosser/projects.png",
   },
 };
 
