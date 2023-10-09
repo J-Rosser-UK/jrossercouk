@@ -1,5 +1,4 @@
 import Image from "next/image";
-import sanitylogo from "@/public/sanity.png";
 import vercellogo from "@/public/vercel.svg";
 import nextjslogo from "@/public/nextjs.svg";
 import UnmountStudio from "./Unmount";
@@ -12,22 +11,7 @@ export default function Footer() {
           <div className="flex md:flex-row flex-col items-center gap-x-2">
             <h3 className="font-inter">Built with:</h3>
             <ul className="flex items-center gap-x-2 text-sm dark:text-zinc-600 text-zinc-400 md:mt-0 mt-3">
-              <li>
-                <a
-                  href="https://sanity.io"
-                  rel="noreferrer noopener"
-                  target="_blank"
-                  className="flex items-center gap-x-2 dark:text-white text-zinc-600 hover:underline"
-                >
-                  <Image
-                    src={sanitylogo}
-                    width={20}
-                    height={20}
-                    alt="sanity logo"
-                  />{" "}
-                  Sanity
-                </a>
-              </li>
+            
               <li>
                 <a
                   href="https://nextjs.org"

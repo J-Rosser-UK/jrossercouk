@@ -3,7 +3,6 @@ import Link from "next/link";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import type { PostType } from "@/types";
-import { getSinglePost } from "@/lib/sanity.query";
 import { PortableText } from "@portabletext/react";
 import { CustomPortableText } from "../../components/shared/CustomPortableText";
 import { BiChevronRight, BiCalendar, BiTime } from "react-icons/bi";
@@ -11,8 +10,8 @@ import { formatDate } from "../../utils/date";
 import SharePost from "../../components/shared/SharePost";
 import FeaturedPosts from "../../components/pages/FeaturedPosts";
 import { Slide } from "../../animation/Slide";
-import { urlFor } from "@/lib/sanity.image";
 import Buymeacoffee from "@/app/components/shared/Buymeacoffee";
+import { getPost } from "@/app/mockapi/mockapi";
 
 type Props = {
   params: {
@@ -26,10 +25,17 @@ const fallbackImage: string =
 // Dynamic metadata for SEO
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const slug = params.post;
-  const post: PostType = await getSinglePost(slug);
-  if (!post) {
-    notFound();
-  }
+
+  const post: PostType = await getPost()
+
+ 
+
+    if (!post) {
+      notFound();
+    }
+  
+
+  
 
   return {
     title: `${post.title}`,
@@ -43,7 +49,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     openGraph: {
       images:
-        urlFor(post.coverImage?.image).width(1200).height(630).url() ||
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/800px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg" ||
         fallbackImage,
       url: `https://victoreke.com/blog/${post.slug}`,
       title: post.title,
@@ -59,7 +65,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: post.title,
       description: post.description,
       images:
-        urlFor(post.coverImage?.image).width(680).height(340).url() ||
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/800px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg" ||
         fallbackImage,
       creator: `@${post.author.twitterUrl.split("twitter.com/")[1]}`,
       site: `@${post.author.twitterUrl.split("twitter.com/")[1]}`,
@@ -70,7 +76,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function Post({ params }: Props) {
   const slug = params.post;
-  const post: PostType = await getSinglePost(slug);
+  const post: PostType = await getPost()
   if (!post) {
     notFound();
   }
@@ -138,10 +144,7 @@ export default async function Post({ params }: Props) {
               <address className="flex items-center gap-x-3 mt-4 not-italic">
                 <div className="relative w-12 h-12">
                   <Image
-                    src={urlFor(post.author.photo.image)
-                      .width(80)
-                      .height(80)
-                      .url()}
+                    src={"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/800px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg"}
                     alt={post.author.photo.alt}
                     layout="fill"
                     className="dark:bg-zinc-800 bg-zinc-300 rounded-full object-cover"

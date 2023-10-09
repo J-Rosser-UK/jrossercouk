@@ -1,11 +1,10 @@
 import Link from "next/link";
 import Image from "next/legacy/image";
-import { getPosts } from "@/lib/sanity.query";
 import type { PostType } from "@/types";
+import { getPosts } from "@/app/mockapi/mockapi";
 
 export default async function FeaturedPosts({ params }: { params?: string }) {
-  const featuredPosts: PostType[] = await getPosts();
-
+  const featuredPosts: PostType[] = await getPosts()
   return (
     <>
       {featuredPosts.map((post) =>

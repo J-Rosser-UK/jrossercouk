@@ -1,5 +1,5 @@
 import { PortableText } from "@portabletext/react";
-import { getProfile } from "@/lib/sanity.query";
+import { getProfile } from "@/app/mockapi/mockapi";
 import type { ProfileType } from "@/types";
 import { CustomPortableTextFavicon } from "../shared/CustomPortableTextFavicon";
 

@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { Metadata } from "next";
-import { getSingleProject } from "@/lib/sanity.query";
+import { getSingleProject } from "@/app/mockapi/mockapi";
 import type { ProjectType } from "@/types";
 import { PortableText } from "@portabletext/react";
 import { CustomPortableText } from "@/app/components/shared/CustomPortableText";
 import { Slide } from "../../animation/Slide";
-import { urlFor } from "@/lib/sanity.image";
+
 
 type Props = {
   params: {
@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: project.tagline,
     openGraph: {
       images:
-        urlFor(project.coverImage?.image).width(1200).height(630).url() ||
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/800px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg" ||
         fallbackImage,
       url: `https://victoreke.com/projects/${project.slug}`,
       title: project.name,
