@@ -26,16 +26,16 @@ export default function MobileMenu() {
       href: "/projects",
       icon: HiBeaker,
     },
-    {
-      title: "Blog",
-      href: "/blog",
-      icon: HiBookmarkAlt,
-    },
-    {
-      title: "Photos",
-      href: "/photos",
-      icon: HiCamera,
-    },
+    // {
+    //   title: "Blog",
+    //   href: "/blog",
+    //   icon: HiBookmarkAlt,
+    // },
+    // {
+    //   title: "Photos",
+    //   href: "/photos",
+    //   icon: HiCamera,
+    // },
   ];
 
   const onToggleNav = () => {

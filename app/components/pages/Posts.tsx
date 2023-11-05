@@ -1,6 +1,6 @@
 import Image from "next/legacy/image";
 import Link from "next/link";
-import { getPosts } from "@/app/mockapi/mockapi";
+import { getPosts } from "@/lib/sanity.query";
 import { PostType } from "@/types";
 import EmptyState from "../shared/EmptyState";
 import { BiCalendar, BiTime } from "react-icons/bi";

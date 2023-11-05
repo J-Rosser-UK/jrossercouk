@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Metadata } from "next";
-import { getProfile } from "../mockapi/mockapi";
+import { getProfile } from "@/lib/sanity.query";
 import type { ProfileType } from "@/types";
 import { PortableText } from "@portabletext/react";
 import { BiEnvelope, BiLinkExternal, BiSolidDownload } from "react-icons/bi";
@@ -11,12 +11,12 @@ import { Slide } from "../animation/Slide";
 
 export const metadata: Metadata = {
   title: "About | J Rosser",
-  metadataBase: new URL("https://jrosser.co.uk/about"),
+  metadataBase: new URL("https://jrosser.com/about"),
   description:
     "Learn more about my skills, experience and technical background",
   openGraph: {
     title: "About | J Rosser",
-    url: "https://jrosser.co.uk/about",
+    url: "https://jrosser.com/about",
     description:
       "Learn more about my skills, experience and technical background",
     images:
@@ -36,8 +36,7 @@ export default async function About() {
               <div className="order-2 lg:order-none">
                 <Slide>
                   <h1 className="font-incognito font-black tracking-tight sm:text-5xl text-3xl lg:leading-tight basis-1/2 mb-8">
-                    I&apos;m {data.fullName}. I live in {data.location}, where I
-                    build the future.
+                    Hi! I'm J!
                   </h1>
 
                   <div className="dark:text-zinc-400 text-zinc-600 leading-relaxed">

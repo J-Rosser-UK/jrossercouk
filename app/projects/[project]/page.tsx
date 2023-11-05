@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { Metadata } from "next";
-import { getSingleProject } from "@/app/mockapi/mockapi";
+import { getSingleProject } from "@/lib/sanity.query";
 import type { ProjectType } from "@/types";
 import { PortableText } from "@portabletext/react";
 import { CustomPortableText } from "@/app/components/shared/CustomPortableText";
 import { Slide } from "../../animation/Slide";
-
+import { urlFor } from "@/lib/sanity.image";
 
 type Props = {
   params: {
@@ -23,13 +23,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `${project.name} | Project`,
-    metadataBase: new URL(`https://jrosser.co.uk/projects/${project.slug}`),
+    metadataBase: new URL(`https://jrosser.com/projects/${project.slug}`),
     description: project.tagline,
     openGraph: {
       images:
-        "/../public/profile_picture.jpg" ||
+        urlFor(project.coverImage?.image).width(1200).height(630).url() ||
         fallbackImage,
-      url: `https://jrosser.co.uk/projects/${project.slug}`,
+      url: `https://jrosser.com/projects/${project.slug}`,
       title: project.name,
       description: project.tagline,
     },

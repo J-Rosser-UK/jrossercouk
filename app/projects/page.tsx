@@ -1,18 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
-import { getProjects } from "../mockapi/mockapi";
+import { getProjects } from "@/lib/sanity.query";
 import type { ProjectType } from "@/types";
 import EmptyState from "../components/shared/EmptyState";
 import { Slide } from "../animation/Slide";
 
 export const metadata: Metadata = {
   title: "Project | J Rosser",
-  metadataBase: new URL("https://jrosser.co.uk/projects"),
+  metadataBase: new URL("https://jrosser.com/projects"),
   description: "Explore projects built by J Rosser",
   openGraph: {
     title: "Projects | J Rosser",
-    url: "https://jrosser.co.uk/projects",
+    url: "https://jrosser.com/projects",
     description: "Explore projects built by J Rosser",
     images:
       "https://res.cloudinary.com/jrosser/image/upload/v1692636087/jrosser/projects.png",
@@ -30,11 +30,8 @@ export default async function Project() {
             Projects
           </h1>
           <p className="text-base dark:text-zinc-400 text-zinc-600 leading-relaxed">
-            I&apos;ve worked on tons of little projects over the years but these
-            are the ones that I&apos;m most proud of. Many of them are
-            open-source, so if you see something that piques your interest,
-            check out the code and contribute if you have ideas on how it can be
-            improved.
+          
+            The projects showcased form a small representative sample of J's AI, Machine Learning and Computer Vision portfolio. Unfortunately, not all projects can be released due to NDAs.
           </p>
         </Slide>
       </header>

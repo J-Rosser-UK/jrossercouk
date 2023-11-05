@@ -1,11 +1,11 @@
 import Image from "next/image";
+import { getJob } from "@/lib/sanity.query";
 import type { JobType } from "@/types";
 import { formatDate } from "../../utils/date";
 import { Slide } from "../../animation/Slide";
-import { getJobs } from "@/app/mockapi/mockapi";
 
 export default async function Job() {
-  const job: JobType[] = await getJobs()
+  const job: JobType[] = await getJob();
 
   return (
     <section className="mt-32">

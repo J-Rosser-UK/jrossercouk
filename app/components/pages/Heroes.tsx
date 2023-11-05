@@ -1,4 +1,4 @@
-import { getHeroes } from "@/app/mockapi/mockapi";
+import { getHeroes } from "@/lib/sanity.query";
 import { HeroeType } from "@/types";
 import EasterEgg from "../shared/EasterEgg";
 import { Slide } from "../../animation/Slide";

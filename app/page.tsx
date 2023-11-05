@@ -1,20 +1,13 @@
+import { getProfile } from "@/lib/sanity.query";
 import type { ProfileType } from "@/types";
 import HeroSvg from "./icons/HeroSvg";
 import Job from "./components/pages/Job";
 import Social from "./components/shared/Social";
 import { Slide } from "./animation/Slide";
-import { getProfile } from "./mockapi/mockapi";
 import Image from "next/image";
-import { Metadata } from "next";
-
-import { PortableText } from "@portabletext/react";
-import { BiEnvelope, BiLinkExternal, BiSolidDownload } from "react-icons/bi";
-
-
 
 export default async function Home() {
-
-  const profile: ProfileType[] = await getProfile()
+  const profile: ProfileType[] = await getProfile();
 
   return (
     <main className="max-w-7xl mx-auto md:px-16 px-6 lg:mt-32 mt-20">
@@ -58,13 +51,13 @@ export default async function Home() {
                     </div>
                     ))}
                    
-        <Slide delay={0.14}>
-          <HeroSvg />
-        </Slide>
+                   
        
       </section>
       <Job />
+      <Slide delay={0.14}>
+          <HeroSvg />
+        </Slide>
     </main>
   );
 }
-
