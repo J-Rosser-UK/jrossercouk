@@ -1,17 +1,20 @@
 import "@/app/styles/globals.css";
 import Script from "next/script";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 import incognito from "./font/font";
 import Navbar from "./components/global/Navbar";
 import Footer from "./components/global/Footer";
 import { Providers } from "./providers";
+import "@/app/styles/globals.css";
+import "@/app/styles/inter-font.css"; // Add this line
 
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--inter",
-});
+
+// const inter = Inter({
+//   subsets: ["latin"],
+//   display: "swap",
+//   variable: "--inter",
+// });
 
 const options = {
   title: "J Rosser | Software Developer",
@@ -49,7 +52,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${incognito.variable} ${inter.className} dark:bg-zinc-900 bg-white dark:text-white text-zinc-700`}
+        className={`${incognito.variable} dark:bg-zinc-900 bg-white dark:text-white text-zinc-700`}
       >
         <Providers>
           <Navbar />

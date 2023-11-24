@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Buymeacoffee() {
   return (
     <a
@@ -7,7 +9,7 @@ export default function Buymeacoffee() {
       rel="noreferrer noopener"
     >
       Do you feel like supporting my work? 🙂
-      <img
+      <Image
         className="grayscale group-hover:grayscale-0 duration-300"
         alt="Buymeacoffee button"
         loading="lazy"

@@ -6,6 +6,8 @@ import { PortableText } from "@portabletext/react";
 import { CustomPortableText } from "@/app/components/shared/CustomPortableText";
 import { Slide } from "../../animation/Slide";
 import { urlFor } from "@/lib/sanity.image";
+import { socialLinks } from "@/app/data/social";
+import { BiLogoGithub } from "react-icons/bi";
 
 type Props = {
   params: {
@@ -59,7 +61,7 @@ export default async function Project({ params }: Props) {
                   : "cursor-pointer hover:border-zinc-700"
               }`}
             >
-              {project.projectUrl ? "Explore" : "Coming Soon"}
+              {project.projectUrl ? "GitHub" : "Coming Soon"}
             </a>
           </div>
 
@@ -80,6 +82,23 @@ export default async function Project({ params }: Props) {
               value={project.description}
               components={CustomPortableText}
             />
+            <div>
+           
+            <a
+              href={project.projectUrl}
+              rel="noreferer noopener"
+              target="_blank"
+              className="flex items-center border-b dark:border-b-zinc-800 border-zinc-200 group"
+            >
+              <BiLogoGithub
+                className="flex-shrink-0 h-5 w-5 text-zinc-500 group-hover:dark:text-white group-hover:text-zinc-800 duration-300"
+                aria-hidden="true"
+              />{" "}
+              &nbsp;
+              Check out this project on {socialLinks[0].name}
+            </a>
+          
+          </div>
           </div>
         </div>
       </Slide>
