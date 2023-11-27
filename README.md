@@ -128,3 +128,8 @@ npm run build
 
 
 ps -ef | grep httpd | grep -v grep | awk '{print $2}' | sudo xargs kill -9
+
+
+node --max-old-space-size=8096 node_modules/next/dist/bin/next build
+
+pm2 start npm --name "next" -- start

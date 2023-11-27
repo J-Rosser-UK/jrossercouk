@@ -19,6 +19,9 @@ export default async function Home() {
             <section className="relative grid lg:grid-cols-custom grid-cols-1 gap-x-6 justify-items-center">
               <div className="order-2 lg:order-none">
               <Slide>
+              <h1 className="font-incognito font-black tracking-tight text-3xl sm:text-5xl mb-6 lg:leading-[3.7rem] leading-tight lg:min-w-[700px] min-w-full">
+                Jennifer Rosser
+                </h1>
                 <h1 className="font-incognito font-black tracking-tight text-3xl sm:text-5xl mb-6 lg:leading-[3.7rem] leading-tight lg:min-w-[700px] min-w-full">
                   {data.headline}
                 </h1>

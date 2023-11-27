@@ -36,7 +36,7 @@ export default async function About() {
               <div className="order-2 lg:order-none">
                 <Slide>
                   <h1 className="font-incognito font-black tracking-tight sm:text-5xl text-3xl lg:leading-tight basis-1/2 mb-8">
-                    Hi! I&apos;m J!
+                    Hi!
                   </h1>
 
                   <div className="dark:text-zinc-400 text-zinc-600 leading-relaxed">
