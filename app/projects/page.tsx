@@ -31,7 +31,8 @@ export default async function Project() {
           </h1>
           <p className="text-base dark:text-zinc-400 text-zinc-600 leading-relaxed">
           
-            The projects showcased form a small representative sample of J&apos;s AI, Machine Learning and Computer Vision portfolio. Unfortunately, not all projects can be released due to NDAs.
+            The projects showcased here form a small representative sample of my AI, Machine Learning and Computer Vision portfolio.
+            I will be taking the time to write up and release more projects over the next few months.
           </p>
         </Slide>
       </header>
