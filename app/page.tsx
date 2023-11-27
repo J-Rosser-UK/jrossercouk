@@ -46,7 +46,7 @@ export default async function Home() {
                       priority
                     />
                     <div className="flex flex-col text-center gap-y-4">
-                      <div className="flex items-center gap-x-3">
+                      {/* <div className="flex items-center gap-x-3">
                         <a
                           href="https://www.craft.me/s/WQpQF3jrPIodXp"
                           rel="noreferrer noopener"
@@ -65,8 +65,15 @@ export default async function Home() {
                             aria-label="Download Resume"
                           />
                         </a>
-                      </div>
-                    </div>
+                      </div>*/}
+                      <a
+                        href={`mailto:${data.email}`}
+                        className="flex items-center gap-x-2 hover:text-primary-color"
+                      >
+                        <BiEnvelope className="text-lg" />
+                        {data.email}
+                      </a>
+                    </div> 
                     </div>
                     </Slide>
                     </aside>
