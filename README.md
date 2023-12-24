@@ -129,6 +129,9 @@ npm run build
 
 ps -ef | grep httpd | grep -v grep | awk '{print $2}' | sudo xargs kill -9
 
+sudo rm -r .next
+
+pm2 delete all
 
 node --max-old-space-size=8096 node_modules/next/dist/bin/next build
 
