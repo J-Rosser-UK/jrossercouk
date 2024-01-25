@@ -6,6 +6,9 @@ import { Slide } from "../../animation/Slide";
 
 export default async function Job() {
   const job: JobType[] = await getJob();
+  job.sort((a, b) =>  new Date(b.startDate).getTime() - new Date(a.startDate).getTime());
+
+
 
   return (
     <section className="mt-32">
