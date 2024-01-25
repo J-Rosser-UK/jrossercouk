@@ -11,6 +11,7 @@ import {
   BiLogoTwitter,
   BiLogoUnsplash,
   BiLogoYoutube,
+  BiLogoMedium
 } from "react-icons/bi";
 import { FaFreeCodeCamp, FaGitlab, FaProductHunt } from "react-icons/fa";
 import { SiCodewars } from "react-icons/si";
@@ -36,6 +37,13 @@ export const socialLinks = [
     name: "Linkedin",
     url: "https://www.linkedin.com/in/j-rosser/",
     icon: BiLogoLinkedinSquare,
+    status: "social",
+  },
+  {
+    id: 4,
+    name: "Medium",
+    url: "https://medium.com/@jrosseruk",
+    icon: BiLogoMedium,
     status: "social",
   },
   // {
