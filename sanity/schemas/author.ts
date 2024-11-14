@@ -1,11 +1,11 @@
 import { defineField, defineType } from "sanity";
 import { BiUser } from "react-icons/bi";
 
-export default defineType({
+export default {
   name: "author",
   title: "Author",
   type: "document",
-  icon: BiUser,
+  Icon: BiUser,
   fields: [
     defineField({
       name: "name",
@@ -39,4 +39,4 @@ export default defineType({
       validation: (rule) => rule.required(),
     }),
   ],
-});
+};

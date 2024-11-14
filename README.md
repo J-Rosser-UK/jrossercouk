@@ -126,6 +126,11 @@ npm run build
 [sanity-manage]: https://sanity.io/manage
 [sanity-guide]: https://www.freecodecamp.org/news/how-to-build-a-portfolio-site-with-sanity-and-nextjs
 
+### Handy Deployment Commands
+
+```
+nvm install 18.18.1
+nvm use 18.18.1
 
 ps -ef | grep httpd | grep -v grep | awk '{print $2}' | sudo xargs kill -9
 
@@ -136,3 +141,4 @@ pm2 delete all
 node --max-old-space-size=8096 node_modules/next/dist/bin/next build
 
 pm2 start npm --name "next" -- start
+```

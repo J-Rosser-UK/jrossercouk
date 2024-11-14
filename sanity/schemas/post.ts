@@ -2,11 +2,11 @@ import { defineField, defineType } from "sanity";
 import { BiBookOpen } from "react-icons/bi";
 import Author from "./author";
 
-export default defineType({
+export default {
   name: "Post",
   title: "Blog Posts",
   type: "document",
-  icon: BiBookOpen,
+  Icon: BiBookOpen,
   fields: [
     defineField({
       name: "title",
@@ -162,4 +162,4 @@ export default defineType({
       description: "Tick this if you will like to publish this post",
     }),
   ],
-});
+};

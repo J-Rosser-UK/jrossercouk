@@ -13,7 +13,7 @@ export default function Social({ type }: { type: string }) {
               target="_blank"
               className="flex items-center border-b dark:border-b-zinc-800 border-zinc-200 group"
             >
-              <value.icon
+              <value.Icon
                 className="flex-shrink-0 h-5 w-5 text-zinc-500 group-hover:dark:text-white group-hover:text-zinc-800 duration-300"
                 aria-hidden="true"
               />{" "}

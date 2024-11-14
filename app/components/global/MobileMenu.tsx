@@ -19,22 +19,22 @@ export default function MobileMenu() {
     {
       title: "About",
       href: "/about",
-      icon: HiUser,
+      Icon: HiUser,
     },
     {
       title: "Projects",
       href: "/projects",
-      icon: HiBeaker,
+      Icon: HiBeaker,
     },
     // {
     //   title: "Blog",
     //   href: "/blog",
-    //   icon: HiBookmarkAlt,
+    //   Icon: HiBookmarkAlt,
     // },
     // {
     //   title: "Photos",
     //   href: "/photos",
-    //   icon: HiCamera,
+    //   Icon: HiCamera,
     // },
   ];
 
@@ -86,7 +86,7 @@ export default function MobileMenu() {
               className="flex items-center gap-x-2 font-incognito font-semibold text-lg dark:shadow-line-dark shadow-line-light p-6 group"
               onClick={onToggleNav}
             >
-              <link.icon
+              <link.Icon
                 className="text-zinc-500 group-hover:dark:text-white group-hover:text-zinc-800 duration-300"
                 aria-hidden="true"
               />

@@ -1,11 +1,11 @@
 import { FaGlasses } from "react-icons/fa";
 import { defineType, defineField } from "sanity";
 
-export default defineType({
+export default {
   name: "heroe",
   title: "Heroes",
   type: "document",
-  icon: FaGlasses,
+  Icon: FaGlasses,
   fields: [
     defineField({
       name: "name",
@@ -23,4 +23,4 @@ export default defineType({
       type: "boolean",
     }),
   ],
-});
+};

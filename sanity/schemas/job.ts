@@ -4,7 +4,7 @@ const job = {
   name: "job",
   title: "Job",
   type: "document",
-  icon: BiBriefcase,
+  Icon: BiBriefcase,
   fields: [
     {
       name: "name",

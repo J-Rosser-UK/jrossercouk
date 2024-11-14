@@ -17,9 +17,9 @@ import "@/app/styles/inter-font.css"; // Add this line
 // });
 
 const options = {
-  title: "J Rosser | Software Developer",
+  title: "J Rosser | DPhil in Machine Learning @ University of Oxford",
   description:
-    "J Rosser is a Software Developer and Technical Writer who is passionate about building solutions and contributing to open source communities",
+    "J Rosser is a DPhil student in Machine Learning at the University of Oxford.",
   url: "https://jrosser.co.uk",
   ogImage:
     "/../public/profile_picture.jpg",
